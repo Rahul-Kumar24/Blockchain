@@ -47,6 +47,7 @@ contract TokenFarm {
                     for ( uint i=0; i<stakers.length; i++){
                               address = recipient = stakers[i];
                               uint blance = stakingBalance[recipient];
+                              dappToken.transfer(recipient, balance);
                     }
           }
 }
