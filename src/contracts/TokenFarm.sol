@@ -45,7 +45,8 @@ contract TokenFarm {
           //3 Issuing Tokens
           function issueToken() public{
                     for ( uint i=0; i<stakers.length; i++){
-                              
+                              address = recipient = stakers[i];
+                              uint blance = stakingBalance[recipient];
                     }
           }
 }
